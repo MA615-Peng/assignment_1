@@ -1,6 +1,8 @@
 ---
 title: "assignment_1"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -60,7 +62,7 @@ ggplot(mtcars_mpg2, aes(x=as.factor(cyl), y=mpg)) +
 ```
 
 
-
+x=as.factor(cyl) should change to equal a categorical value, first I will creat a value cyl = as.factor(mtcars_mpg$cyl), then change x=as.factor(cyl) as x= cyl.
 
 
 
